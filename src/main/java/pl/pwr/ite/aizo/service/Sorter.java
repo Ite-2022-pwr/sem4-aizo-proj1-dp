@@ -24,7 +24,7 @@ public class Sorter {
     }
 
     public List<SortResult> insertionSort() {
-        return this.heapSort(DefaultSortOptions.DEFAULT_INTEGER);
+        return this.insertionSort(DefaultSortOptions.DEFAULT_INTEGER);
     }
 
     public List<SortResult> insertionSort(SortOptions sortOptions) {
@@ -32,7 +32,7 @@ public class Sorter {
     }
 
     public List<SortResult> quickSort() {
-        return this.heapSort(DefaultSortOptions.DEFAULT_QUICK_SORT_INTEGER);
+        return this.quickSort(DefaultSortOptions.DEFAULT_QUICK_SORT_INTEGER);
     }
 
     public List<SortResult> quickSort(QuickSortOptions sortOptions) {

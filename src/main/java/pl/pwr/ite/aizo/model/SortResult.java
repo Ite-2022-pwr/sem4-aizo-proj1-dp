@@ -10,9 +10,19 @@ public class SortResult {
 
     private int arraySize;
 
+    private SortDataType dataType;
+
+    private AlgorithmType algorithmType;
+
+    private PivotPosition pivotPosition;
+
+    private ArrayType arrayType;
+
+    private ShellAlgorithmType shellAlgorithmType;
+
     private List<Long> sortTimes = new ArrayList<>();
 
-    public Double getAverage() {
+    public Double getAverageTime() {
         return sortTimes.stream().mapToLong(l -> l).average().getAsDouble();
     }
 }
